@@ -1,6 +1,6 @@
-a = 10
-b = 5
+import shapelib
+shapelib.say_hello()
 
-a = a * b
-b = a / b
-a = a / b
+import shapelib as s
+s.say_hello()
+
