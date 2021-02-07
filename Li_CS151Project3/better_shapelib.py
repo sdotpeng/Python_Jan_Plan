@@ -11,7 +11,6 @@ def goto(t, x, y):
     t.setheading(0)
     t.pendown()
 
-
 def rectangle(t, x, y, width, height):
     '''Draws a `width` x `height` rectangle with bottom-left corner positioned at (`x`, `y`).
     '''
@@ -43,7 +42,6 @@ def mondrian(t, x, y, s, number):
         else:
             rectangle2(t, random.randint(-100,100), random.randint(-100,100), random.randint(50,150) * s, random.randint(50,150) * s, fill=False, edgeColor=(random.random(), random.random(), random.random()), fillColor=(random.random(), random.random(), random.random()), pensize = 3)
 
-
 def star(t, x, y, scale, color, fill=False): 
     '''Function of creating a star shape: the 1st simple shape copied'''
     goto(t, x, y)
@@ -55,7 +53,6 @@ def star(t, x, y, scale, color, fill=False):
         t.right(144)
     if fill == True:
         t.end_fill()
-
 
 def triangle(t, x, y, scale, color, fill=False): 
     '''Function of creating a triangle shape: the 2nd simple shape copied'''
@@ -120,7 +117,6 @@ def circle(t, x, y, arc_length, color):
         t.left(1)
     t.end_fill()
 
-
 def myScene(t, x_offset = 0, y_offset = 0, scale = 1):
     '''Function of my scene'''
     rocket(t, x_offset-170 * scale, y_offset-150 * scale, 1/2 * scale, 'LightSkyBlue4')
@@ -134,7 +130,6 @@ def myScene(t, x_offset = 0, y_offset = 0, scale = 1):
     circle(t, x_offset-10 * scale, y_offset+100 * scale, 1/4 * scale, 'RoyalBlue')
     circle(t, x_offset-50 * scale, y_offset+10 * scale, 1/5 * scale, 'tan')
     circle(t, x_offset-100 * scale, y_offset-50 * scale, 1/4 * scale, 'chocolate')
-
 
 # if __name__== '__main__':
 #     window = turtle.Screen()
